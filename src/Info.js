@@ -21,14 +21,21 @@ const Info = () => {
     //     console.log('name', name)
     // }, [name]);
 
+    // useEffect(() => {
+    //     console.log('effect');
+    //     console.log(name);
+    //     return () => {
+    //         console.log('cleanup');
+    //         console.log(name);
+    //     };
+    // }, [name]);
+
     useEffect(() => {
         console.log('effect');
-        console.log(name);
         return () => {
-            console.log('cleanup');
-            console.log(name);
-        };
-    }, [name]);
+            console.log('unmount');
+        }
+    }, []);
 
     const onChangeName = e => {
         setName(e.target.value);
