@@ -1,12 +1,12 @@
 import './App.css';
-import Counter from './Counter';
+// import Counter from './Counter';
 // import { useState } from 'react';
-// import Info from './Info';
+import Info from './Info';
 
 const App = () => {
   // const [visible, setVisible] = useState(false);
-  return <Counter />;
-  // return <Info />
+  // return <Counter />;
+  return <Info />
   // return (
   //   <div>
   //     <button
